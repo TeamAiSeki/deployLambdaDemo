@@ -19,7 +19,7 @@ def lambda_handler(event, context):
         message = [
           {
             "type": "template",
-            "altText": "this is a buttons template",
+            "altText": "Thank you for subscribing!!",
             "quickReply": {
               "items": [
                 {

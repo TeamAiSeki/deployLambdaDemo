@@ -1,5 +1,5 @@
 # deployLambdaDemo
-This is an environmental for developing Lambda Function by your local PC.
+This is an environment for developing Lambda Function by your local PC.
 
 ## Environment requirements
 1. docker 
