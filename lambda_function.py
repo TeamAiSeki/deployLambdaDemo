@@ -20,8 +20,13 @@ def lambda_handler(event, context):
 
     elif message_dist["events"][0]["type"] == "postback":
         postback = message_dist["events"][0]["postback"]["data"] 
-        if postback == "male" or postback == "female" or postback =="both":
+        postback_action = postback.split("&")[0].split("=")[1]
+        # DB保存用
+        # postback_value = postback.split("&")[1].split("=")[1]
+        if postback_action == "romance":
             json_open = open('json/Height.json', 'r')
+        if postback_action == "height":
+            json_open = open('json/Style.json', 'r')
 
     else:
         json_open = open('json/error.json', 'r')

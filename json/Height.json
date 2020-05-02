@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "150未満",
 					"displayText": "150未満",
-					"data": "000-150"
+					"data": "action=height&height=000-150"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "150~154",
 					"displayText": "150~154",
-					"data": "150-154"
+					"data": "action=height&height=150-154"
         }
       },
       {
@@ -27,7 +27,7 @@
 					"type": "postback",
 					"label": "155~159",
 					"displayText": "155~159",
-					"data": "155-159"
+					"data": "action=height&height=155-159"
         }
       },
       {
@@ -36,7 +36,7 @@
 					"type": "postback",
 					"label": "160~164",
 					"displayText": "160~164",
-					"data": "160-164"
+					"data": "action=height&height=160-164"
         }
       },
       {
@@ -45,7 +45,7 @@
 					"type": "postback",
 					"label": "165~169",
 					"displayText": "165~169",
-					"data": "165-169"
+					"data": "action=height&height=165-169"
         }
       },
       {
@@ -54,7 +54,7 @@
 					"type": "postback",
 					"label": "170~174",
 					"displayText": "170~174",
-					"data": "170-174"
+					"data": "action=height&height=170-174"
         }
       },
       {
@@ -63,7 +63,7 @@
 					"type": "postback",
 					"label": "175~179",
 					"displayText": "175~179",
-					"data": "175-179"
+					"data": "action=height&height=175-179"
         }
       },
       {
@@ -72,7 +72,7 @@
 					"type": "postback",
 					"label": "180~184",
 					"displayText": "180~184",
-					"data": "180-184"
+					"data": "action=height&height=180-184"
         }
       },
       {
@@ -81,7 +81,7 @@
 					"type": "postback",
 					"label": "185~189",
 					"displayText": "185~189",
-					"data": "185-189"
+					"data": "action=height&height=185-189"
         }
       },
       {
@@ -90,7 +90,7 @@
 					"type": "postback",
 					"label": "190以上",
 					"displayText": "190以上",
-					"data": "190-000"
+					"data": "action=height&height=190-000"
         }
       }
     ]
