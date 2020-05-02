@@ -1,0 +1,61 @@
+{
+    "type": "flex",
+    "altText": "Flex Message",
+    "contents": {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Ai Code",
+            "size": "xl",
+            "align": "center",
+            "gravity": "center",
+            "weight": "bold",
+            "wrap": true
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "margin": "xxl",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "あなたのAiコードが発行されました！",
+                    "size": "sm",
+                    "align": "center",
+                    "wrap": false
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://sho-d-blog.com/wp-content/uploads/2020/04/QR_871018.png",
+                    "margin": "xl",
+                    "size": "xxl",
+                    "aspectMode": "cover"
+                  },
+                  {
+                    "type": "text",
+                    "text": "友達に相性を判定してもらいましょう♡",
+                    "margin": "xl",
+                    "size": "xs",
+                    "align": "center",
+                    "color": "#AAAAAA",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+}

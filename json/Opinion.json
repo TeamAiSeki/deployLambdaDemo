@@ -1,0 +1,66 @@
+{
+    "type": "flex",
+    "altText": "意見を主張するタイプ？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "する",
+					"displayText": "する",
+					"data": "action=opinion&opinion=4"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "ややする",
+					"displayText": "ややする",
+					"data": "action=opinion&opinion=3"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "あまりしない",
+					"displayText": "あまりしない",
+					"data": "action=opinion&opinion=2"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "しない",
+					"displayText": "しない",
+					"data": "action=opinion&opinion=1"
+				}
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/mimi-thian-lp1AKIUV3yo-unsplash.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "意見を主張するタイプ？",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+  }

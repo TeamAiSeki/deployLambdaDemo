@@ -27,6 +27,14 @@ def lambda_handler(event, context):
             json_open = open('json/Height.json', 'r')
         if postback_action == "height":
             json_open = open('json/Style.json', 'r')
+        if postback_action == "style":
+            json_open = open('json/Age.json', 'r')
+        if postback_action == "age":
+            json_open = open('json/Opinion.json', 'r')
+        if postback_action == "opinion":
+            json_open = open('json/Emotion.json', 'r')
+        if postback_action == "emotion":
+            json_open = open('json/Aicode.json', 'r')
 
     else:
         json_open = open('json/error.json', 'r')

@@ -1,0 +1,66 @@
+{
+    "type": "flex",
+    "altText": "悲しみや喜びを大事にする？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "する",
+					"displayText": "する",
+					"data": "action=emotion&emotion=4"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "ややする",
+					"displayText": "ややする",
+					"data": "action=emotion&emotion=3"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "あまりしない",
+					"displayText": "あまりしない",
+					"data": "action=emotion&emotion=2"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "しない",
+					"displayText": "しない",
+					"data": "action=emotion&emotion=1"
+				}
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/smiley-2979107_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "感情は大事にするタイプ？",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+  }

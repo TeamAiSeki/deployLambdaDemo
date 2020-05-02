@@ -1,0 +1,138 @@
+{
+    "type": "flex",
+    "altText": "あなたの年齢は？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "18",
+					"displayText": "18",
+					"data": "action=age&age=18"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "19",
+					"displayText": "19",
+					"data": "action=age&age=19"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "20",
+					"displayText": "20",
+					"data": "action=age&age=20"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "21",
+					"displayText": "21",
+					"data": "action=age&age=21"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "22",
+					"displayText": "22",
+					"data": "action=age&age=22"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "23",
+					"displayText": "23",
+					"data": "action=age&age=23"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "24",
+					"displayText": "24",
+					"data": "action=age&age=24"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "25",
+					"displayText": "25",
+					"data": "action=age&age=25"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "26~29",
+					"displayText": "26~29",
+					"data": "action=age&age=26-29"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "30~34",
+					"displayText": "30~34",
+					"data": "action=age&age=30-34"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "35~39",
+					"displayText": "35~39",
+					"data": "action=age&age=35-39"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "40以上",
+					"displayText": "40以上",
+					"data": "action=age&age=40-00"
+        }
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "あなたの年齢は？",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+}
