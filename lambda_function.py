@@ -19,7 +19,8 @@ def lambda_handler(event, context):
         json_open = open('json/Romance.json', 'r')
 
     elif message_dist["events"][0]["type"] == "postback":
-        if message_dist["events"][0]["postback"]["data"] == ("male" or "female" or "both"):
+        postback = message_dist["events"][0]["postback"]["data"] 
+        if postback == "male" or postback == "female" or postback =="both":
             json_open = open('json/Height.json', 'r')
 
     else:
