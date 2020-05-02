@@ -1,0 +1,147 @@
+{
+  "type": "flex",
+  "altText": "あなたの身長は？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "150未満",
+					"displayText": "150未満",
+					"data": "000-150"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "150~154",
+					"displayText": "150~154",
+					"data": "150-154"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "155~159",
+					"displayText": "155~159",
+					"data": "155-159"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "160~164",
+					"displayText": "160~164",
+					"data": "160-164"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "165~169",
+					"displayText": "165~169",
+					"data": "165-169"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "170~174",
+					"displayText": "170~174",
+					"data": "170-174"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "175~179",
+					"displayText": "175~179",
+					"data": "175-179"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "180~184",
+					"displayText": "180~184",
+					"data": "180-184"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "185~189",
+					"displayText": "185~189",
+					"data": "185-189"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "190以上",
+					"displayText": "190以上",
+					"data": "190-000"
+        }
+      }
+    ]
+	},
+  "contents": {
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/measurement-1476913_640.jpg",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "あなたの身長は？",
+          "size": "lg",
+          "weight": "regular"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "baseline",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "数字で入力してください",
+                  "flex": 0,
+                  "margin": "sm",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "(cm)",
+                  "size": "sm",
+                  "align": "end",
+                  "color": "#AAAAAA"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
