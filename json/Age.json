@@ -7,81 +7,36 @@
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "18",
-					"displayText": "18",
-					"data": "action=age&age=18"
+					"label": "18~20",
+					"displayText": "18~20",
+					"data": "action=age&age=18-20"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "19",
-					"displayText": "19",
-					"data": "action=age&age=19"
+					"label": "21~23",
+					"displayText": "21~23",
+					"data": "action=age&age=21-23"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "20",
-					"displayText": "20",
-					"data": "action=age&age=20"
+					"label": "24~26",
+					"displayText": "24~26",
+					"data": "action=age&age=24-26"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "21",
-					"displayText": "21",
-					"data": "action=age&age=21"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "22",
-					"displayText": "22",
-					"data": "action=age&age=22"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "23",
-					"displayText": "23",
-					"data": "action=age&age=23"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "24",
-					"displayText": "24",
-					"data": "action=age&age=24"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "25",
-					"displayText": "25",
-					"data": "action=age&age=25"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "26~29",
-					"displayText": "26~29",
-					"data": "action=age&age=26-29"
+					"label": "27~29",
+					"displayText": "27~29",
+					"data": "action=age&age=27-29"
         }
       },
       {
