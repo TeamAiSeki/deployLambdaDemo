@@ -4,6 +4,8 @@ import re
 import os
 
 def lambda_handler(event, context):
+    print(1,event)
+    print(2,context)
     url = "https://api.line.me/v2/bot/message/reply"
     method = "POST"
     headers = {
@@ -16,7 +18,7 @@ def lambda_handler(event, context):
     
     # 友達登録時
     if message_dist["events"][0]["type"] == "follow":
-        json_open = open('json/Romance.json', 'r')
+        json_open = open('json/Age.json', 'r')
 
     elif message_dist["events"][0]["type"] == "postback":
         postback = message_dist["events"][0]["postback"]["data"] 
