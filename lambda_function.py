@@ -24,6 +24,12 @@ def lambda_handler(event, context):
         # DB保存用
         # postback_value = postback.split("&")[1].split("=")[1]
         if postback_action == "romance":
+            json_open = open('json/Major.json', 'r')
+        if postback_action == "major":
+            json_open = open('json/Club.json', 'r')
+        if postback_action == "club":
+            json_open = open('json/Work.json', 'r')
+        if postback_action == "work":
             json_open = open('json/Height.json', 'r')
         if postback_action == "height":
             json_open = open('json/Style.json', 'r')

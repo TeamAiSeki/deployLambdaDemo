@@ -1,0 +1,93 @@
+{
+	"type": "flex",
+	"altText": "最も印象的な仕事・バイト経験は？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "飲食",
+					"displayText": "飲食",
+					"data": "action=work&work=restaurant"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "販売",
+					"displayText": "販売",
+					"data": "action=work&work=sale"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "接客サービス",
+					"displayText": "接客サービス",
+					"data": "action=work&work=communication"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "教育",
+					"displayText": "教育",
+					"data": "action=work&work=education"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "ITサービス",
+					"displayText": "ITサービス",
+					"data": "action=work&work=itservice"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "その他",
+					"displayText": "その他",
+					"data": "action=work&work=other"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "ない",
+					"displayText": "ない",
+					"data": "action=work&work=none"
+				}
+      }
+    ]
+	},
+	"contents": {
+		"type": "bubble",
+		"hero": {
+			"type": "image",
+			"url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/20200426-0240_278b8dd32672a04863fe767b68cc3afe.jpg",
+			"size": "full",
+			"aspectRatio": "20:13",
+			"aspectMode": "cover"
+		},
+		"body": {
+			"type": "box",
+			"layout": "vertical",
+			"contents": [
+				{
+					"type": "text",
+					"text": "クラブやサークルは？",
+					"size": "lg",
+					"weight": "regular"
+				}
+			]
+		}
+	}
+}
