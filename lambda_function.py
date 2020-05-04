@@ -2,10 +2,10 @@ import json
 import urllib.request
 import re
 import os
+import qrcode
+from PIL import Image
 
 def lambda_handler(event, context):
-    print(1,event)
-    print(2,context)
     url = "https://api.line.me/v2/bot/message/reply"
     method = "POST"
     headers = {
@@ -13,8 +13,9 @@ def lambda_handler(event, context):
         'Content-Type': 'application/json'
     }
     message_dist = json.loads(event["body"])
-    
-    print(message_dist["events"])
+
+    #UserIDを取得
+    user_id = message_dist["events"][0]["source"]["userId"]
     
     # 友達登録時
     if message_dist["events"][0]["type"] == "follow":
@@ -42,12 +43,15 @@ def lambda_handler(event, context):
         if postback_action == "opinion":
             json_open = open('json/Emotion.json', 'r')
         if postback_action == "emotion":
+            # QRコードを生成しクエリパラメータとしてuser_idを与える
+            qr = qrcode.make('https://comingout.tokyo/1806'+ '/?user_id='+ user_id)
             json_open = open('json/Aicode.json', 'r')
 
     else:
         json_open = open('json/error.json', 'r')
 
     json_load = json.load(json_open)
+    print("||||", json_load)
     params = {
         "replyToken": message_dist["events"][0]["replyToken"],
         "messages": [json_load]
@@ -55,6 +59,6 @@ def lambda_handler(event, context):
     request = urllib.request.Request(url, json.dumps(params).encode("utf-8"), method=method, headers=headers)
     with urllib.request.urlopen(request) as res:
         body = res.read()
-        print(body)
+        print("入力", body)
             
     return 0
