@@ -1,6 +1,24 @@
 {
     "type": "flex",
     "altText": "Flex Message",
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "camera",
+            "label": "相手のAiコードを撮影"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "cameraRoll",
+            "label": "カメラロールから選択"
+          }
+        }
+      ]
+    },
     "contents": {
       "type": "bubble",
       "body": {
@@ -44,9 +62,9 @@
                   },
                   {
                     "type": "text",
-                    "text": "友達に相性を判定してもらいましょう♡",
+                    "text": "相手のAiコードをトーク上に送信すればあなたとの相性を判定します♡(未実装)",
                     "margin": "xl",
-                    "size": "xs",
+                    "size": "sm",
                     "align": "center",
                     "color": "#AAAAAA",
                     "wrap": true
