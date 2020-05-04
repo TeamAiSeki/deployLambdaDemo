@@ -84,8 +84,9 @@
 				{
 					"type": "text",
 					"text": "最も印象的な仕事・バイト経験は？",
-					"size": "lg",
-					"weight": "regular"
+					"size": "md",
+					"weight": "regular",
+					"wrap": true
 				}
 			]
 		}

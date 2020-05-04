@@ -1,14 +1,14 @@
 {
     "type": "flex",
-    "altText": "意見を主張するタイプ？",
+    "altText": "気づいたら聞き手になってる？話し手になってる？",
 	"quickReply": {
 		"items": [
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "する",
-					"displayText": "する",
+					"label": "話し手",
+					"displayText": "話し手",
 					"data": "action=opinion&opinion=4"
         }
       },
@@ -16,8 +16,8 @@
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "ややする",
-					"displayText": "ややする",
+					"label": "やや話し手",
+					"displayText": "やや話し手",
 					"data": "action=opinion&opinion=3"
 				}
       },
@@ -25,8 +25,8 @@
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "あまりしない",
-					"displayText": "あまりしない",
+					"label": "やや聞き手",
+					"displayText": "やや聞き手",
 					"data": "action=opinion&opinion=2"
 				}
       },
@@ -34,8 +34,8 @@
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "しない",
-					"displayText": "しない",
+					"label": "聞き手",
+					"displayText": "聞き手",
 					"data": "action=opinion&opinion=1"
 				}
       }
@@ -56,9 +56,10 @@
         "contents": [
           {
             "type": "text",
-            "text": "意見を主張するタイプ？",
-            "size": "lg",
-            "weight": "regular"
+            "text": "気づいたら聞き手になってる？話し手になってる？",
+            "size": "md",
+            "weight": "regular",
+            "wrap": true
           }
         ]
       }

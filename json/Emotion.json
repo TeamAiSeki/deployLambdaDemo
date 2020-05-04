@@ -1,6 +1,6 @@
 {
     "type": "flex",
-    "altText": "悲しみや喜びを大事にする？",
+    "altText": "嬉しいとニヤけたり、映画を見て感動したりする？",
 	"quickReply": {
 		"items": [
       {
@@ -56,9 +56,10 @@
         "contents": [
           {
             "type": "text",
-            "text": "感情は大事にするタイプ？",
-            "size": "lg",
-            "weight": "regular"
+            "text": "嬉しいとニヤけたり、映画を見て感動したりする？",
+            "size": "md",
+            "weight": "regular",
+            "wrap": true
           }
         ]
       }
