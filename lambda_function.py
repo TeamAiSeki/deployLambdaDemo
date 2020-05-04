@@ -4,7 +4,10 @@ import re
 import os
 import qrcode
 from PIL import Image
-
+import cv2
+ 
+from datetime import datetime, timezone
+ 
 def lambda_handler(event, context):
     url = "https://api.line.me/v2/bot/message/reply"
     method = "POST"
@@ -13,6 +16,7 @@ def lambda_handler(event, context):
         'Content-Type': 'application/json'
     }
     message_dist = json.loads(event["body"])
+    print("message_dist", message_dist)
 
     #UserIDを取得
     user_id = message_dist["events"][0]["source"]["userId"]
@@ -43,12 +47,22 @@ def lambda_handler(event, context):
         if postback_action == "opinion":
             json_open = open('json/Emotion.json', 'r')
         if postback_action == "emotion":
-            # QRコードを生成しクエリパラメータとしてuser_idを与える
-            qr = qrcode.make('https://comingout.tokyo/1806'+ '/?user_id='+ user_id)
+            # QRコードを生成しクエリパラメータとしてuser_idを与える、一旦正田氏のqrをそのまま利用する。
+            # qr = qrcode.make('https://comingout.tokyo/1806'+ '/?user_id='+ user_id)
             json_open = open('json/Aicode.json', 'r')
-
+    
     else:
         json_open = open('json/error.json', 'r')
+    
+    # #ユーザーの画像送信をキャッチ
+    # if message_dist["events"][0]["type"] == "message":
+    #     if message_dist["events"][0]["message"]["type"] == "image":
+            
+    
+    #ユーザーのID送信をキャッチ
+    if message_dist["events"][0]["type"] == "message":
+        if message_dist["events"][0]["message"]["text"] == r"^[0-9]*$":
+            json_open = open('json/matching_result.json')
 
     json_load = json.load(json_open)
     print("||||", json_load)
