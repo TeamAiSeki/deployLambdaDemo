@@ -1,6 +1,24 @@
 {
     "type": "flex",
     "altText": "Flex Message",
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "camera",
+            "label": "相手のAiコードを撮影"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "cameraRoll",
+            "label": "カメラロールから選択"
+          }
+        }
+      ]
+    },
     "contents": {
       "type": "bubble",
       "body": {
