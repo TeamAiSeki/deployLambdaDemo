@@ -1,0 +1,93 @@
+{
+    "type": "flex",
+    "altText": "最も時間をかけたアルバイトや仕事を教えてください",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "飲食（居酒屋、フード）",
+					"displayText": "飲食（居酒屋、フード）",
+					"data": "action=job&job=飲食（居酒屋、フード）"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "販売（コンビニ、アパレル）",
+					"displayText": "販売（コンビニ、アパレル）",
+					"data": "action=job&job=2販売（コンビニ、アパレル）"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "接客（カラオケ、ネカフェ）",
+					"displayText": "接客（カラオケ、ネカフェ）",
+					"data": "action=job&job=接客（カラオケ、ネカフェ）"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "教育（塾、家庭教師）",
+					"displayText": "教育（塾、家庭教師）",
+					"data": "action=job&job=教育（塾、家庭教師）"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "サービス（ホテル、コールセンター）",
+					"displayText": "サービス（ホテル、コールセンター）",
+					"data": "action=job&job=サービス（ホテル、コールセンター）"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "35~39",
+					"displayText": "35~39",
+					"data": "action=age&age=35-39"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "40以上",
+					"displayText": "40以上",
+					"data": "action=age&age=40-00"
+        }
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "最も時間をかけたアルバイトや仕事を教えてください",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+}

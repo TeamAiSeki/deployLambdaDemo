@@ -1,0 +1,57 @@
+{
+    "type": "flex",
+    "altText": "お酒は飲みますか？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "飲む",
+					"displayText": "飲む",
+					"data": "action=alcohol&alcohol=飲む"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "ときどき飲む",
+					"displayText": "ときどき飲む",
+					"data": "action=alcohol&alcohol=ときどき飲む"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "飲まない",
+					"displayText": "飲まない",
+					"data": "action=alcohol&alcohol=飲まない"
+        }
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "お酒は飲みますか？",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+}

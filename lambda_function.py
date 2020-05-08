@@ -6,12 +6,23 @@ import os
 import qrcode
 from PIL import ImageChops
 import re
+import boto3
 #各種機械学習モジュールのimport、使うなら
 # import keras
 # import numpy as np
 
+dynamo_db = boto3.resource('dynamodb')
+table= dynamo_db.Table('AIsekiya')
+
 #User情報を引数に受け取り、診断結果を返す関数。オバソン記述予定。
 def matching(user_id):
+    #DBから相手先の情報を取得
+    # partner_info = table.get_item(
+    #     Key={
+    #         'user_id': user_id
+    #         }
+    #     )
+    
     #機械学習処理
     model_output = "96%"
     return model_output
@@ -25,42 +36,53 @@ def lambda_handler(event, context):
         'Content-Type': 'application/json'
     }
     message_dist = json.loads(event["body"])
-    print("message_dist", message_dist)
 
     #UserIDを取得
     user_id = message_dist["events"][0]["source"]["userId"]
     
     # 友達登録時
     if message_dist["events"][0]["type"] == "follow":
-        json_open = open('json/Age.json', 'r')
+        json_open = open('json/Height.json', 'r')
 
     elif message_dist["events"][0]["type"] == "postback":
         postback = message_dist["events"][0]["postback"]["data"] 
         postback_action = postback.split("&")[0].split("=")[1]
-        # DB保存用
-        # postback_value = postback.split("&")[1].split("=")[1]
-        if postback_action == "romance":
-            json_open = open('json/Major.json', 'r')
-        if postback_action == "major":
-            json_open = open('json/Club.json', 'r')
-        if postback_action == "club":
-            json_open = open('json/Work.json', 'r')
-        if postback_action == "work":
-            json_open = open('json/Height.json', 'r')
         if postback_action == "height":
+            height = postback.split("&")[1].split("=")[1]
+            table.put_item(
+                Item = {
+                    'user_id': user_id,
+                    'height': height
+                }
+            )
             json_open = open('json/Style.json', 'r')
         if postback_action == "style":
             json_open = open('json/Age.json', 'r')
         if postback_action == "age":
-            json_open = open('json/Opinion.json', 'r')
-            print(json_open)
-            print(type(json_open))
-        if postback_action == "opinion":
-            json_open = open('json/Emotion.json', 'r')
-        if postback_action == "emotion":
+            json_open = open('json/Subject.json', 'r')
+        if postback_action == "subject":
+            json_open = open('json/Club.json', 'r')
+        if postback_action == "club":
+            json_open = open('json/Job.json', 'r')
+        if postback_action == "job":
+            json_open = open('json/Alcohol.json', 'r')
+        if postback_action == "alcohol":
+            json_open = open('json/Smoke.json', 'r')
+        if postback_action == "smoke":
+            json_open = open('json/Fashion.json', 'r')
+        if postback_action == "fashion":
+            json_open = open('json/Social1.json', 'r')
+        if postback_action == "social1":
+            json_open = open('json/Social2.json', 'r')
+        if postback_action == "social2":
             # QRコードを生成しクエリパラメータとしてuser_idを与える、一旦正田氏のqrをそのまま利用する。
             # qr = qrcode.make('https://comingout.tokyo/1806'+ '/?user_id='+ user_id)
-            json_open = open('json/Aicode.json', 'r')
+            # json_open = open('json/Aicode.json', 'r')
+            json_load = {
+                    "type": "text",
+                    "text": "回答ありがとうございました。あなたのIDは、xxxxです。"
+                    }
+            read_flag = False
             
     
     #ユーザーがBotに何らかを送信した場合
@@ -82,9 +104,9 @@ def lambda_handler(event, context):
                     "text": "相性診断に失敗しました。IDを確認してください。"
                     }
         else :
-            json_open = open('json/error.json', 'r')
+            json_open = open('json/Error.json', 'r')
     else:
-        json_open = open('json/error.json', 'r')
+        json_open = open('json/Error.json', 'r')
 
     if read_flag :
         json_load = json.load(json_open)
