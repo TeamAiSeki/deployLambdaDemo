@@ -3,8 +3,6 @@ import json
 import urllib.request
 import re
 import os
-import qrcode
-from PIL import ImageChops
 import re
 import boto3
 #各種機械学習モジュールのimport、使うなら
@@ -39,7 +37,9 @@ def lambda_handler(event, context):
 
     #UserIDを取得
     user_id = message_dist["events"][0]["source"]["userId"]
-    
+    #LineでのUser_IDは文字列を含むため、数値のみを抽出する。ちょっとこのままだと長すぎる。
+    user_num = re.sub("\\D", "", user_id)
+
     # 友達登録時
     if message_dist["events"][0]["type"] == "follow":
         json_open = open('json/Height.json', 'r')
@@ -48,13 +48,11 @@ def lambda_handler(event, context):
         postback = message_dist["events"][0]["postback"]["data"] 
         postback_action = postback.split("&")[0].split("=")[1]
         if postback_action == "height":
-            height = postback.split("&")[1].split("=")[1]
             table.put_item(
                 Item = {
-                    'user_id': user_id,
-                    'height': height
-                }
-            )
+                    "user_id" : user_num,
+                    postback_action : postback.split("&")[1].split("=")[1]
+                })
             json_open = open('json/Style.json', 'r')
         if postback_action == "style":
             json_open = open('json/Age.json', 'r')
@@ -80,7 +78,7 @@ def lambda_handler(event, context):
             # json_open = open('json/Aicode.json', 'r')
             json_load = {
                     "type": "text",
-                    "text": "回答ありがとうございました。あなたのIDは、xxxxです。"
+                    "text": "回答ありがとうございました。あなたのIDは" + user_num +  "です。"
                     }
             read_flag = False
             
