@@ -55,27 +55,74 @@ def lambda_handler(event, context):
                 })
             json_open = open('json/Style.json', 'r')
         if postback_action == "style":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Age.json', 'r')
         if postback_action == "age":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Subject.json', 'r')
         if postback_action == "subject":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Club.json', 'r')
         if postback_action == "club":
+            # table.put_item(
+                # Item = {
+                #     "user_id" : user_num,
+                #     postback_action : postback.split("&")[1].split("=")[1]
+                # })
             json_open = open('json/Job.json', 'r')
         if postback_action == "job":
+            # table.put_item(
+                # Item = {
+                #     "user_id" : user_num,
+                #     postback_action : postback.split("&")[1].split("=")[1]
+                # })
             json_open = open('json/Alcohol.json', 'r')
         if postback_action == "alcohol":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Smoke.json', 'r')
         if postback_action == "smoke":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Fashion.json', 'r')
         if postback_action == "fashion":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Social1.json', 'r')
         if postback_action == "social1":
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_open = open('json/Social2.json', 'r')
         if postback_action == "social2":
-            # QRコードを生成しクエリパラメータとしてuser_idを与える、一旦正田氏のqrをそのまま利用する。
-            # qr = qrcode.make('https://comingout.tokyo/1806'+ '/?user_id='+ user_id)
-            # json_open = open('json/Aicode.json', 'r')
+            # table.put_item(
+            #     Item = {
+            #         "user_id" : user_num,
+            #         postback_action : postback.split("&")[1].split("=")[1]
+            #     })
             json_load = {
                     "type": "text",
                     "text": "回答ありがとうございました。あなたのIDは" + user_num +  "です。"
