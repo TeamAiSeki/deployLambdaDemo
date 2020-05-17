@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "こだわる",
 					"displayText": "こだわる",
-					"data": "action=fashion&fashion=こだわる"
+					"data": "action=fashion&fashion=0"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "清潔感を意識する",
 					"displayText": "清潔感を意識する",
-					"data": "action=fashion&fashion=清潔感を意識する"
+					"data": "action=fashion&fashion=1"
         }
       },
       {
@@ -27,7 +27,7 @@
 					"type": "postback",
 					"label": "あまり気にしない",
 					"displayText": "あまり気にしない",
-					"data": "action=fashion&fashion=あまり気にしない"
+					"data": "action=fashion&fashion=2"
         }
       }
     ]

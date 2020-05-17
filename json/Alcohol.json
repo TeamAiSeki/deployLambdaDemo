@@ -7,9 +7,9 @@
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "飲む",
-					"displayText": "飲む",
-					"data": "action=alcohol&alcohol=飲む"
+					"label": "よく飲む",
+					"displayText": "よく飲む",
+					"data": "action=alcohol&alcohol=2"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "ときどき飲む",
 					"displayText": "ときどき飲む",
-					"data": "action=alcohol&alcohol=ときどき飲む"
+					"data": "action=alcohol&alcohol=1"
         }
       },
       {
@@ -27,7 +27,7 @@
 					"type": "postback",
 					"label": "飲まない",
 					"displayText": "飲まない",
-					"data": "action=alcohol&alcohol=飲まない"
+					"data": "action=alcohol&alcohol=0"
         }
       }
     ]

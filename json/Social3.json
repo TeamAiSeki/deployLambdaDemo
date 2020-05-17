@@ -1,33 +1,42 @@
 {
     "type": "flex",
-    "altText": "煙草は吸いますか？",
+    "altText": "嬉しいとついニヤけてしまう？",
 	"quickReply": {
 		"items": [
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "吸わない",
-					"displayText": "吸わない",
-					"data": "action=smoke&smoke=0"
+					"label": "する",
+					"displayText": "する",
+					"data": "action=social2&social2=-2"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "吸うが、周りが嫌ならやめる",
-					"displayText": "吸うが、周りが嫌ならやめる",
-					"data": "action=smoke&smoke=1"
+					"label": "ややする",
+					"displayText": "ややする",
+					"data": "action=social2&social2=-1"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "吸うし、これからも吸いたい",
-					"displayText": "吸うし、これからも吸いたい",
-					"data": "action=smoke&smoke=2"
+					"label": "あまりしない",
+					"displayText": "あまりしない",
+					"data": "action=social2&social2=1"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "しない",
+					"displayText": "しない",
+					"data": "action=social2&social2=2"
         }
       }
     ]
@@ -47,9 +56,10 @@
         "contents": [
           {
             "type": "text",
-            "text": "煙草は吸いますか？",
-            "size": "lg",
-            "weight": "regular"
+            "text": "嬉しいとついニヤけてしまう？",
+            "size": "md",
+            "weight": "regular",
+            "wrap": true
           }
         ]
       }
