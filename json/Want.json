@@ -1,36 +1,27 @@
 {
 	"type": "flex",
-	"altText": "恋愛対象は？",
+	"altText": "今何したい？",
 	"quickReply": {
 		"items": [
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "男",
-					"displayText": "男",
-					"data": "action=romance&romance=0"
+					"label": "楽しみたい・遊びたい",
+					"displayText": "楽しみたい・遊びたい",
+					"data": "action=work&work=0"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "女",
-					"displayText": "女",
-					"data": "action=romance&romance=1"
+					"label": "将来のために頑張りたい",
+					"displayText": "将来のために頑張りたい",
+					"data": "action=work&work=1"
 				}
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "両方",
-					"displayText": "両方",
-					"data": "action=romance&romance=2"
-				}
-      }
-    ]
+	  }
+	]
 	},
 	"contents": {
 		"type": "bubble",
@@ -47,9 +38,10 @@
 			"contents": [
 				{
 					"type": "text",
-					"text": "恋愛対象は？",
-					"size": "lg",
-					"weight": "regular"
+					"text": "今何したい？",
+					"size": "md",
+					"weight": "regular",
+					"wrap": true
 				}
 			]
 		}

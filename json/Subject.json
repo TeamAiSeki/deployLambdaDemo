@@ -1,0 +1,102 @@
+{
+    "type": "flex",
+    "altText": "得意科目は？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "国語",
+					"displayText": "国語",
+					"data": "action=subject&subject=0"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "数学",
+					"displayText": "数学",
+					"data": "action=subject&subject=1"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "理科",
+					"displayText": "理科",
+					"data": "action=opinion&opinion=2"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "社会",
+					"displayText": "社会",
+					"data": "action=opinion&opinion=3"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "英語",
+					"displayText": "英語",
+					"data": "action=subject&subject=4"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "体育",
+					"displayText": "体育",
+					"data": "action=subject&subject=5"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "音楽",
+					"displayText": "音楽",
+					"data": "action=subject&subject=6"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "芸術",
+					"displayText": "芸術",
+					"data": "action=subject&subject=7"
+				}
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/mimi-thian-lp1AKIUV3yo-unsplash.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "得意科目は？",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+  }

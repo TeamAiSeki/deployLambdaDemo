@@ -1,0 +1,93 @@
+{
+    "type": "flex",
+    "altText": "やってみたい仕事を選んでください",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "アパレル系",
+					"displayText": "アパレル系",
+					"data": "action=job&job=0"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "エンジニア",
+					"displayText": "エンジニア",
+					"data": "action=job&job=1"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "スポーツ選手",
+					"displayText": "スポーツ選手",
+					"data": "action=job&job=2"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "芸能・YOUTUBER",
+					"displayText": "芸能・YOUTUBER",
+					"data": "action=job&job=3"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "農家",
+					"displayText": "農家",
+					"data": "action=job&job=4"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "医者・看護",
+					"displayText": "医者・看護",
+					"data": "action=job&job=5"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "経営者",
+					"displayText": "経営者",
+					"data": "action=job&job=6"
+        }
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "やってみたい仕事を選んでください",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+}

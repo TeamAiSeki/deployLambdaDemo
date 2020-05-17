@@ -1,0 +1,67 @@
+{
+    "type": "flex",
+    "altText": "他の人達の意見が自分と違っている時には",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "自分の意見をはっきり言う",
+					"displayText": "自分の意見をはっきり言う",
+					"data": "action=social2&social2=-2"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "どちらかというと、自分の意見をはっきり言う",
+					"displayText": "どちらかというと、自分の意見をはっきり言う",
+					"data": "action=social2&social2=-1"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "どちらかというと、その場の雰囲気を考えて合わせる",
+					"displayText": "どちらかというと、その場の雰囲気を考えて合わせる",
+					"data": "action=social2&social2=1"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "その場の雰囲気を考えて合わせる",
+					"displayText": "その場の雰囲気を考えて合わせる",
+					"data": "action=social2&social2=2"
+        }
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "他の人達の意見が自分と違っている時には",
+            "size": "md",
+            "weight": "regular",
+            "wrap": true
+          }
+        ]
+      }
+    }
+}

@@ -1,43 +1,43 @@
 {
     "type": "flex",
-    "altText": "気づいたら聞き手になってる？話し手になってる？",
+    "altText": "映画を見て感動したりする？",
 	"quickReply": {
 		"items": [
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "話し手",
-					"displayText": "話し手",
-					"data": "action=opinion&opinion=4"
+					"label": "する",
+					"displayText": "する",
+					"data": "action=social2&social2=-2"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "やや話し手",
-					"displayText": "やや話し手",
-					"data": "action=opinion&opinion=3"
-				}
+					"label": "ややする",
+					"displayText": "ややする",
+					"data": "action=social2&social2=-1"
+        }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "やや聞き手",
-					"displayText": "やや聞き手",
-					"data": "action=opinion&opinion=2"
-				}
+					"label": "あまりしない",
+					"displayText": "あまりしない",
+					"data": "action=social2&social2=1"
+        }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "聞き手",
-					"displayText": "聞き手",
-					"data": "action=opinion&opinion=1"
-				}
+					"label": "しない",
+					"displayText": "しない",
+					"data": "action=social2&social2=2"
+        }
       }
     ]
 	},
@@ -45,7 +45,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/mimi-thian-lp1AKIUV3yo-unsplash.jpg",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
         "size": "full",
         "aspectRatio": "20:13",
         "aspectMode": "cover"
@@ -56,7 +56,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "気づいたら聞き手になってる？話し手になってる？",
+            "text": "映画を見て感動したりする？",
             "size": "md",
             "weight": "regular",
             "wrap": true
@@ -64,4 +64,4 @@
         ]
       }
     }
-  }
+}

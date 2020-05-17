@@ -1,33 +1,24 @@
 {
 	"type": "flex",
-	"altText": "恋愛対象は？",
+	"altText": "どっちが嬉しい?",
 	"quickReply": {
 		"items": [
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "男",
-					"displayText": "男",
-					"data": "action=romance&romance=0"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "女",
-					"displayText": "女",
-					"data": "action=romance&romance=1"
+					"label": "得をする",
+					"displayText": "得をする",
+					"data": "action=major&major=0"
 				}
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "両方",
-					"displayText": "両方",
-					"data": "action=romance&romance=2"
+					"label": "人を助ける",
+					"displayText": "人を助ける",
+					"data": "action=major&major=1"
 				}
       }
     ]
@@ -47,7 +38,7 @@
 			"contents": [
 				{
 					"type": "text",
-					"text": "恋愛対象は？",
+					"text": "どっちが嬉しい?",
 					"size": "lg",
 					"weight": "regular"
 				}

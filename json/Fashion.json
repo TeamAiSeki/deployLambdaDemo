@@ -1,0 +1,57 @@
+{
+    "type": "flex",
+    "altText": "おしゃれは好きですか？",
+	"quickReply": {
+		"items": [
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "こだわる",
+					"displayText": "こだわる",
+					"data": "action=fashion&fashion=0"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "清潔感を意識する",
+					"displayText": "清潔感を意識する",
+					"data": "action=fashion&fashion=1"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "あまり気にしない",
+					"displayText": "あまり気にしない",
+					"data": "action=fashion&fashion=2"
+        }
+      }
+    ]
+	},
+    "contents": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://aisekiimagebucket.s3-ap-northeast-1.amazonaws.com/youth-640094_640.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "おしゃれは好きですか？",
+            "size": "lg",
+            "weight": "regular"
+          }
+        ]
+      }
+    }
+}
