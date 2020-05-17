@@ -1,6 +1,6 @@
 {
     "type": "flex",
-    "altText": "質問1：気づいたら話し手になってる？聞き手になってる？",
+    "altText": "気づいたら話し手になってる？聞き手になってる？",
 	"quickReply": {
 		"items": [
       {
@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "話し手",
 					"displayText": "話し手",
-					"data": "action=social1&social1=4"
+					"data": "action=social1&social1=-2"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "やや話し手",
 					"displayText": "やや話し手",
-					"data": "action=social1&social1=3"
+					"data": "action=social1&social1=-1"
         }
       },
       {
@@ -27,7 +27,7 @@
 					"type": "postback",
 					"label": "やや聞き手",
 					"displayText": "やや聞き手",
-					"data": "action=social1&social1=2"
+					"data": "action=social1&social1=1"
         }
       },
       {
@@ -36,7 +36,7 @@
 					"type": "postback",
 					"label": "聞き手",
 					"displayText": "聞き手",
-					"data": "action=social1&social1=1"
+					"data": "action=social1&social1=2"
         }
       }
     ]
@@ -56,7 +56,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "質問1：気づいたら話し手になってる？聞き手になってる？",
+            "text": "気づいたら話し手になってる？聞き手になってる？",
             "size": "md",
             "weight": "regular",
             "wrap": true

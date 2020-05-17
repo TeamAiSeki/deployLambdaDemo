@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "150未満",
 					"displayText": "150未満",
-					"data": "action=height&height=000-150"
+					"data": "action=height&height=0"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "150~154",
 					"displayText": "150~154",
-					"data": "action=height&height=150-154"
+					"data": "action=height&height=1"
         }
       },
       {
@@ -27,7 +27,7 @@
 					"type": "postback",
 					"label": "155~159",
 					"displayText": "155~159",
-					"data": "action=height&height=155-159"
+					"data": "action=height&height=2"
         }
       },
       {
@@ -36,7 +36,7 @@
 					"type": "postback",
 					"label": "160~164",
 					"displayText": "160~164",
-					"data": "action=height&height=160-164"
+					"data": "action=height&height=3"
         }
       },
       {
@@ -45,7 +45,7 @@
 					"type": "postback",
 					"label": "165~169",
 					"displayText": "165~169",
-					"data": "action=height&height=165-169"
+					"data": "action=height&height=4"
         }
       },
       {
@@ -54,7 +54,7 @@
 					"type": "postback",
 					"label": "170~174",
 					"displayText": "170~174",
-					"data": "action=height&height=170-174"
+					"data": "action=height&height=5"
         }
       },
       {
@@ -63,7 +63,7 @@
 					"type": "postback",
 					"label": "175~179",
 					"displayText": "175~179",
-					"data": "action=height&height=175-179"
+					"data": "action=height&height=6"
         }
       },
       {
@@ -72,7 +72,7 @@
 					"type": "postback",
 					"label": "180~184",
 					"displayText": "180~184",
-					"data": "action=height&height=180-184"
+					"data": "action=height&height=7"
         }
       },
       {
@@ -81,7 +81,7 @@
 					"type": "postback",
 					"label": "185~189",
 					"displayText": "185~189",
-					"data": "action=height&height=185-189"
+					"data": "action=height&height=8"
         }
       },
       {
@@ -90,7 +90,7 @@
 					"type": "postback",
 					"label": "190以上",
 					"displayText": "190以上",
-					"data": "action=height&height=190-000"
+					"data": "action=height&height=9"
         }
       }
     ]
@@ -125,7 +125,7 @@
               "contents": [
                 {
                   "type": "text",
-                  "text": "数字で入力してください",
+                  "text": "数字で入力します",
                   "flex": 0,
                   "margin": "sm",
                   "weight": "bold"

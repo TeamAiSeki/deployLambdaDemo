@@ -7,19 +7,10 @@
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "モデル体型",
-					"displayText": "モデル体型",
-					"data": "action=style&style=superthin"
+					"label": "やせ",
+					"displayText": "やせ",
+					"data": "action=style&style=0"
         }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "スリム",
-					"displayText": "スリム",
-					"data": "action=style&style=thin"
-				}
       },
       {
         "type": "action",
@@ -27,7 +18,16 @@
 					"type": "postback",
 					"label": "普通",
 					"displayText": "普通",
-					"data": "action=style&style=normal"
+					"data": "action=style&style=1"
+				}
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "マッチョ",
+					"displayText": "マッチョ",
+					"data": "action=style&style=2"
 				}
       },
       {
@@ -36,7 +36,7 @@
 					"type": "postback",
 					"label": "ぽっちゃり",
 					"displayText": "ぽっちゃり",
-					"data": "action=style&style=fat"
+					"data": "action=style&style=3"
 				}
       }
     ]

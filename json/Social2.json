@@ -1,42 +1,42 @@
 {
     "type": "flex",
-    "altText": "質問2：嬉しいとニヤけたり、映画を見て感動したりする？",
+    "altText": "他の人達の意見が自分と違っている時には",
 	"quickReply": {
 		"items": [
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "する",
-					"displayText": "する",
-					"data": "action=social2&social2=4"
+					"label": "自分の意見をはっきり言う",
+					"displayText": "自分の意見をはっきり言う",
+					"data": "action=social2&social2=-2"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "ややする",
-					"displayText": "ややする",
-					"data": "action=social2&social2=3"
+					"label": "どちらかというと、自分の意見をはっきり言う",
+					"displayText": "どちらかというと、自分の意見をはっきり言う",
+					"data": "action=social2&social2=-1"
         }
       },
       {
         "type": "action",
         "action": {
 					"type": "postback",
-					"label": "あまりしない",
-					"displayText": "あまりしない",
-					"data": "action=social2&social2=2"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-					"type": "postback",
-					"label": "しない",
-					"displayText": "しない",
+					"label": "どちらかというと、その場の雰囲気を考えて合わせる",
+					"displayText": "どちらかというと、その場の雰囲気を考えて合わせる",
 					"data": "action=social2&social2=1"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+					"type": "postback",
+					"label": "その場の雰囲気を考えて合わせる",
+					"displayText": "その場の雰囲気を考えて合わせる",
+					"data": "action=social2&social2=2"
         }
       }
     ]
@@ -56,7 +56,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "質問2：嬉しいとニヤけたり、映画を見て感動したりする？",
+            "text": "他の人達の意見が自分と違っている時には",
             "size": "md",
             "weight": "regular",
             "wrap": true
