@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "得をする",
 					"displayText": "得をする",
-					"data": "action=major&major=0"
+					"data": "action=happy&happy=0"
 				}
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "人を助ける",
 					"displayText": "人を助ける",
-					"data": "action=major&major=1"
+					"data": "action=happy&happy=1"
 				}
       }
     ]

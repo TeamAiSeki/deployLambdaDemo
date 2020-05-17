@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "する",
 					"displayText": "する",
-					"data": "action=social2&social2=-2"
+					"data": "action=social4&social4=-2"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "ややする",
 					"displayText": "ややする",
-					"data": "action=social2&social2=-1"
+					"data": "action=social4&social4=-1"
         }
       },
       {
@@ -27,7 +27,7 @@
 					"type": "postback",
 					"label": "あまりしない",
 					"displayText": "あまりしない",
-					"data": "action=social2&social2=1"
+					"data": "action=social4&social4=1"
         }
       },
       {
@@ -36,7 +36,7 @@
 					"type": "postback",
 					"label": "しない",
 					"displayText": "しない",
-					"data": "action=social2&social2=2"
+					"data": "action=social4&social4=2"
         }
       }
     ]

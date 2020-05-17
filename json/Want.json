@@ -9,7 +9,7 @@
 					"type": "postback",
 					"label": "楽しみたい・遊びたい",
 					"displayText": "楽しみたい・遊びたい",
-					"data": "action=work&work=0"
+					"data": "action=want&want=0"
         }
       },
       {
@@ -18,7 +18,7 @@
 					"type": "postback",
 					"label": "将来のために頑張りたい",
 					"displayText": "将来のために頑張りたい",
-					"data": "action=work&work=1"
+					"data": "action=want&want=1"
 				}
 	  }
 	]
